@@ -58,5 +58,7 @@ public class Practice2 {
 		WebElement quote = driver.findElement(By.id("calculatedpremium"));
 
 		System.out.println(quote.getText());
+		
+
 	}
 }
