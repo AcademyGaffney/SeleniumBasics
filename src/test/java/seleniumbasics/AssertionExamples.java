@@ -114,6 +114,15 @@ class AssertionExamples {
 		assertThrows(NoSuchElementException.class, () -> {
 			driver.findElement(By.id("username"));
 		});
+		
+		//old-school alternative
+		try {
+			driver.findElement(By.id("username"));
+			fail("banned ID used");
+		}
+		catch(NoSuchElementException e) {
+			
+		}
 	}
 
 }
