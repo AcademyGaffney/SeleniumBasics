@@ -48,7 +48,11 @@ public class RadioChecks {
 		driver.switchTo().activeElement().sendKeys(Keys.TAB);
 		driver.switchTo().activeElement().sendKeys(" ");
 		
+		for(WebElement e : group) {
+			System.out.println(e.getAttribute("value") + ": " + (e.isSelected() ? "Checked" : "Unchecked"));
+		}
 		
+		driver.quit();
 
 	}
 
