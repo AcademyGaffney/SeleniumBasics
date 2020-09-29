@@ -73,7 +73,7 @@ public class BasicLocators {
 			System.out.println(driver.findElement(By.xpath("/html/body/div[2]/form/p[3]")).getText());
 		}
 		
-		//driver.quit();
+		driver.quit();
 
 	}
 
