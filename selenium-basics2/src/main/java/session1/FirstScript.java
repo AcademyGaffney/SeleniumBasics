@@ -23,14 +23,12 @@ public class FirstScript {
 		 * We'll see various uses for this as we go on.
 		 */
 		WebDriver driver = new ChromeDriver();
-		
 		String baseUrl = "http://www.cognizant.com";
 		 /*
          * .get() is our first WebDriver method.  It simply makes an Http "get" request for a given page
          * get requests should retrieve data only.
          */
 		driver.get(baseUrl);
-		
 		 /*
          * As title is a common, page-level attribute, WebDriver provides us with a simple method for 
          * retrieving it.  We'll see how to find more arbitrary information as we go forward.
