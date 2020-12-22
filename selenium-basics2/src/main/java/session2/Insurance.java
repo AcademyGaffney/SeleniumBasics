@@ -29,6 +29,7 @@ public class Insurance {
 		Select year = new Select(driver.findElement(By.id("quotation_vehicle_attributes_policystart_1i")));
 		Select month = new Select(driver.findElement(By.id("quotation_vehicle_attributes_policystart_2i")));
 		Select date = new Select(driver.findElement(By.id("quotation_vehicle_attributes_policystart_3i")));
+		Select bdCover = new Select(driver.findElement(By.id("quotation_breakdowncover")));
 		
 		WebElement calculate = driver.findElement(By.xpath("//*[@id=\"new_quotation\"]/div[8]/input[1]"));
 		
@@ -42,6 +43,7 @@ public class Insurance {
 		year.selectByIndex(6);
 		month.selectByVisibleText("May");
 		date.selectByValue("1");
+		bdCover.selectByVisibleText("European");
 
 		calculate.click();
 		
@@ -49,7 +51,7 @@ public class Insurance {
 
 		System.out.println(quote.getText());
 
-		driver.quit();
+		//driver.quit();
 
 	}
 
